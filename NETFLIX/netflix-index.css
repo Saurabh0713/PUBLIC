@@ -107,9 +107,6 @@ align-items: center;
     margin: 80px auto 180px auto;
 }
 @media screen and (max-width: 700px) {
-    .page-4-episodes-container{
-        grid-template-columns: auto;
-    }
     .page-3 {
         /* height: 200vh; */
         grid-template-columns: 2fr 2fr;
@@ -117,7 +114,7 @@ align-items: center;
     }
 }
 .page-3-div{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     min-width: 100px;
 
 }
@@ -307,20 +304,6 @@ align-items: center;
     justify-content: space-between;
     margin: 0 0 10px 0;
     font-size: medium;
-}
-/* ================================================================= */
-.page-5{
-    /* border: 2px solid greenyellow; */
-    width: 100%;
-    height: 100vh;
-}
-.page-5-calander{
-    /* border: 2px solid blue; */
-    width: 90%;
-    height: 75%;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto ;
-    grid-template-rows: auto auto auto auto auto auto;
 }
 
 /* ======================================================================= */
