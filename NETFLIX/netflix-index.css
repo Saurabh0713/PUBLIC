@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Roboto&family=Source+Sans+Pro&display=swap');
+/* font-family: 'Island Moments', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+/* ========================================for all======================================= */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #050505;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #313131;
+}
+/* ================================== for page 1 ========================================= */
+.page-1{
+    width: 100%;
+    height: 100vh;
+}
+.page-1 img{
+    width: 100%;
+    height: 100%;
+}
+/* ==================================== for page 2 ============================================ */
+/* ============================= page 2 left================================== */
+.page-2{
+    /* border: 3px solid orange; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.page-2-left{
+/* border: 2px solid green; */
+width: 30%;
+/* height: 100%; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.page-2-left h2, .page-2-left p{
+    /* border: 1px solid palevioletred; */
+    text-align: justify;
+    width: 80%;
+    margin-left: 3rem;
+}
+.page-2-left h2{
+    /* height: 5rem; */
+    font-size: 400%;
+}
+.page-2-left p{
+    margin-top: 2rem;
+}
+/*============================ page 2 right =============================*/
+.page-2-right{
+/* border: 2px solid blueviolet; */
+width: 70%;
+/* height: 100%; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.page-2-right-row{
+    /* border: 1px solid yellow; */
+    display: grid;
+    width: 95%;
+    /* height: 90%; */
+    grid-template-columns: auto auto auto;
+    
+}
+.page-2-right-col{
+    /* border: 1px solid saddlebrown; */
+    margin: 20px;
+    height: 80%;
+    /* width: 85%; */
+}
+.page-2-right-col img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* =============================== for page 3 ==================================================== */
+.page-3{
+    /* border: 3px solid rgb(214, 218, 206); */
+    width: 96%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    gap: 2rem 3rem;
+    grid-template-rows: 25% 70%;
+    justify-content: center;
+    padding: 25px;
+    padding-top: 35px;
+    margin: 80px auto 180px auto;
+}
+@media screen and (max-width: 700px) {
+    .page-4-episodes-container{
+        grid-template-columns: auto;
+    }
+    .page-3 {
+        /* height: 200vh; */
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 40% 40% 40% 40%;
+    }
+}
+.page-3-div{
+    border: 2px solid yellow;
+    min-width: 100px;
+
+}
+.page-3-text{
+    grid-column: 1/5;
+    text-align: justify;
+}
+.page-3-text h2,.page-3-text p{
+    /* border: 2px solid green; */
+}
+.page-3-text h2{
+    font-size: 300%;
+    margin-bottom: 10px;
+}
+.page-3-item-1{
+   border-radius: 20px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* background-image: url("https://m.media-amazon.com/images/M/MV5BMmIwYzA4YTAtYTMwYy00NzA3LWFmZGQtYWY3MTNlMGM3NDc5XkEyXkFqcGdeQXVyMTE5MTg5NDIw._V1_FMjpg_UX1000_.jpg"); */
+   background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6dae3b135983583.61f1636461cdb.png");
+}
+.page-3-item-2{
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://m.media-amazon.com/images/M/MV5BOWY4MmFiY2QtMzE1YS00NTg1LWIwOTQtYTI4ZGUzNWIxNTVmXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg");
+}
+.page-3-item-3{
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://m.media-amazon.com/images/M/MV5BMWQ3N2EzNjYtMzgwYS00YjdmLThmOTUtMzc4NDUxZjZkY2RhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg");
+}
+.page-3-item-4{
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://m.media-amazon.com/images/M/MV5BNDdiYTI2MTMtNTMzZi00NjNjLTkxNjctMzBhZDYyYjAxYjgyXkEyXkFqcGdeQXVyNjE4ODA3NTY@._V1_.jpg");
+}
+.page-3-functions{
+    /* border: 1px solid black; */
+    background-color: rgba(0, 0, 0, 0.548);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    display: none;
+}
+.page-3-item-1:hover #page-3-functions-1{
+    display: flex;
+    cursor: pointer;
+}
+.page-3-item-2:hover #page-3-functions-2{
+    display: flex;
+    cursor: pointer;
+}
+.page-3-item-3:hover #page-3-functions-3{
+    display: flex;
+    cursor: pointer;
+}
+.page-3-item-4:hover #page-3-functions-4{
+    display: flex;
+    cursor: pointer;
+}
+.page-3-icons{
+    border: 2px solid red;
+    border-style: none none solid none;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-3-icons svg{
+    width: 35px;
+    height: 35px;
+}
+.page-3-icons svg:nth-child(1){
+    width: 40px;
+    height: 40px;
+}
+.page-3-functions p{
+    /* border: 2px solid purple; */
+    height: max-content;
+    font-size: smaller;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+/* ==================================== for page 4 ========================================= */
+
+.page-4{
+    /* border: 3px solid red; */
+    width: 100%;
+    /* height: 100vh; */
+    background-image: url("https://images.lifestyleasia.com/wp-content/uploads/sites/6/2021/05/26152659/Money-Heist-1600x900.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-4-content{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.164),rgba(0, 0, 0, 0.664),rgba(0, 0, 0, 0.849),rgba(0, 0, 0, 0.938));
+}
+.page-4-content-1{
+    /* border: 3px solid orangered; */
+    width: 50%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+.page-4-button button{
+    width: 50px;
+    height: 30px;
+    background-color: red;
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
+.page-4-icons{
+    margin: 8px 0;
+}
+.page-4-icons ion-icon{
+    width: 40px;
+    height: 40px;
+
+}
+.page-4-content-1 h1{
+    font-size: 3rem;
+    margin: 10px 0;
+}
+.page-4-content-1 p{
+    margin: 5px 0;
+}
+#page-4-season1{
+    /* border: 1px dotted white; */
+    width: max-content;
+    padding: 2px;
+    font-size: 14px;
+    display: flex;
+}
+.page-4-season1-svg{
+    margin: 0 0 -2px 2px;
+}
+.page-4-episodes-container{
+    /* border: 2px solid yellow; */
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px 60px;
+    padding: 40px;
+}
+.page-4-episodes{
+    /* border: 1px solid maroon; */
+    background-color: rgb(26, 24, 24);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.page-4-episodes-img{
+    /* border: 2px solid pink; */
+    width: 36%;
+    height: 100%;
+
+}
+.page-4-episodes-img img{
+    width: 99%;
+    height: 99%;
+    border-radius: 10px;
+}
+.page-4-episodes-txt{
+    width: 60%;
+    padding: 6px;
+    font-size: small;
+}
+.page-4-para{
+    color: gray;
+}
+.page-4-episodes-txt div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+    font-size: medium;
+}
+/* ================================================================= */
+.page-5{
+    /* border: 2px solid greenyellow; */
+    width: 100%;
+    height: 100vh;
+}
+.page-5-calander{
+    /* border: 2px solid blue; */
+    width: 90%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto ;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+/* ======================================================================= */
+@media screen and (max-width: 700px) {
+    .page-4-episodes-container{
+        grid-template-columns: auto;
+    }
+}
